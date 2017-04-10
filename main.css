@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+	background-color: #333333;
+}
+
+#container {
+	margin-top: -1.0rem;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80vw;
+	min-height: 100vh;
+	padding: 1.0rem 5.0rem;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0 0 1.0rem 1.0rem #000000;
+	box-shadow: 0 0 1.0rem 1.0rem #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	font-family: 'Roboto', sans-serif;
+	color: #333333;
+	padding: 0.5rem 1.0rem;
+}
+
+h2,
+h3 {
+	color: #666666;
+}
+
+h4 {
+	color: #999999;
+}
+
+p {
+	padding: 0.5rem 2.0rem;
+} 
+
+ul {
+	padding: 0 3.0rem;
+}

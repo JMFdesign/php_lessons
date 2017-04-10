@@ -1,0 +1,177 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'always';
+    src: url('fonts/always.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'hugs';
+    src: url('fonts/hugs.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/roboto.ttf') format('truetype');
+}
+
+
+body {
+	background-color: #333333;
+}
+
+#container {
+	margin-top: -1.0rem;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80vw;
+	min-height: 100vh;
+	padding: 1.0rem 5.0rem;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0 0 1.0rem 1.0rem #000000;
+	box-shadow: 0 0 1.0rem 1.0rem #000000;
+}
+
+#center_content {
+	width: 70%;
+	margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	font-family: 'roboto', sans-serif;
+	color: #333333;
+	padding: 0.5rem 1.0rem;
+}
+
+h1,
+h2 {
+	display: inline-block;
+}
+
+h1::after {
+	content: " :";
+}
+
+h2,
+h3 {
+	color: #666666;
+}
+
+h4 {
+	color: #999999;
+}
+
+p {
+	padding: 0.5rem 2.0rem;
+} 
+
+ul {
+	padding: 0 3.0rem;
+}
+
+img {
+	width: 80%;
+	height: auto;
+	border: 1rem solid #333333;
+}
+
+form,
+input,
+label,
+textarea {
+	font-family: 'Roboto', sans-serif;
+	display: block;
+}
+
+form {
+	margin: 0 1.25rem;
+}
+
+input,
+textarea {
+	margin-bottom: 3.0rem;
+}
+
+label:first-of-type {
+	margin-top: 1.5rem;
+}
+
+/* -- Error and Thank You Formatting -- */
+
+#error, 
+#thanks {
+	text-align: center;
+	    margin-top: -2rem;
+}
+
+#error h3, 
+#thanks h3 {
+	font-size: 3rem;
+	font-family: 'hugs', sans-serif;
+	color: #39317c;
+	margin-bottom: -0.5rem;
+}
+
+#error p, 
+#thanks p {
+	font-size: 1.875rem;
+	font-family: 'always', sans-serif;
+	color: #39317c;
+	margin-top: -0.25rem;
+}
+
+.hover_overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 150%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: hsla(246, 43%, 34%, 0.7);
+}
+
+.hover_area:hover .hover_overlay {
+	opacity: 1;
+}
+
+.hover_text {
+	color: #ffffff;
+	font-size: 2.5rem;
+	font-family: 'always', sans-serif;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.hover_text:hover {
+	color: #eed63a;
+	font-size: 2.5rem;
+	font-family: 'always', sans-serif;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	text-shadow: 0 0 20px #FFF7DB;
+}
+
+#thanks img {
+	width: 50%;
+	height: auto;
+	border: 0.5rem solid #333333;
+}
